@@ -2,6 +2,7 @@ package com.example.danafood.controller;
 
 import com.example.danafood.model.Product;
 import com.example.danafood.service.Product.IProductService;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -35,9 +36,20 @@ public class ProductController {
         Product savedProduct = productService.addNewProduct(product);
         return new ResponseEntity<>(savedProduct, HttpStatus.CREATED);
     }
-    @DeleteMapping("/deleteProduct")
-    public ResponseEntity<String> deleteProduct(@RequestParam Long id){
+    @DeleteMapping("/deleteProduct/{id}")
+    public ResponseEntity<String> deleteProduct(@PathVariable Long id){
         productService.deleteProductById(id);
         return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
+    }
+        @PutMapping("/updateProduct/{id}")
+    public ResponseEntity<String> updateProduct(@PathVariable Long id, @RequestBody  Product product) {
+        try {
+            productService.editProduct(id, product);
+            return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
+        } catch (EntityNotFoundException e) {
+            return new ResponseEntity<>("Product not found", HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Failed to update Product", HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 }

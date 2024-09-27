@@ -10,4 +10,5 @@ public interface IProductService {
     Page<Product> findALlProduct(Pageable pageable);
     void deleteProductById(Long id);
     Product addNewProduct(Product product);
+    Product editProduct(Long id,Product product);
 }
