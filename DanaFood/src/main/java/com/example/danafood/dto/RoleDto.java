@@ -8,6 +8,7 @@ public class RoleDto {
     public RoleDto() {
     }
 
+
     public Long getId() {
         return id;
     }
