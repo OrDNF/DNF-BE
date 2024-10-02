@@ -1,11 +1,9 @@
 package com.example.danafood.service.Product;
 
-import com.example.danafood.model.Product;
+import com.example.danafood.dto.ProductDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import java.util.List;
-
 public interface IProductService {
-    Page<Product> findAllProducts(Pageable pageable);
+    Page<ProductDto> findAllProducts(Pageable pageable);
 }

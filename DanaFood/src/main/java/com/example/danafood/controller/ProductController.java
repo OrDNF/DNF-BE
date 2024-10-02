@@ -1,5 +1,6 @@
 package com.example.danafood.controller;
 
+import com.example.danafood.dto.ProductDto;
 import com.example.danafood.model.Product;
 import com.example.danafood.service.Product.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,8 @@ public class ProductController {
     private IProductService productService;
 
     @GetMapping("/product")
-    public Page<Product> getProducts(@RequestParam(value = "page", defaultValue = "0") int page) {
-        Page<Product> products = productService.findAllProducts(PageRequest.of(page, 10));
+    public Page<ProductDto> getProducts(@RequestParam(value = "page", defaultValue = "0") int page) {
+        Page<ProductDto> products = productService.findAllProducts(PageRequest.of(page, 10));
         return products;
     }
 }

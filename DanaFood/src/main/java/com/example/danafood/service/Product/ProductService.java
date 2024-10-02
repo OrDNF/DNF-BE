@@ -1,5 +1,6 @@
 package com.example.danafood.service.Product;
 
+import com.example.danafood.dto.ProductDto;
 import com.example.danafood.model.Product;
 import com.example.danafood.repository.IProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ public class ProductService implements IProductService{
     private IProductRepo iProductRepo;
 
     @Override
-    public Page<Product> findAllProducts(Pageable pageable) {
-        return iProductRepo.findAll(pageable);
+    public Page<ProductDto> findAllProducts(Pageable pageable) {
+        Page<Product> products = iProductRepo.findAll(pageable);
+        return products.map(product -> new ProductDto(product));
     }
 }

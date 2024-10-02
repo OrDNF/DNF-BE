@@ -1,7 +1,7 @@
 package com.example.danafood.service.User;
 
-import com.example.danafood.model.User;
+import com.example.danafood.dto.UserDto;
 
 public interface IUserService {
-    void signUp(User user);
+    void signUp(UserDto user);
 }

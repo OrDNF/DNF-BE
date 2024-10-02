@@ -1,6 +1,7 @@
 package com.example.danafood.dto;
 
 import com.example.danafood.model.OrderDetail;
+import com.example.danafood.model.Product;
 import com.example.danafood.model.ProductCategory;
 import com.example.danafood.model.Shop;
 import jakarta.persistence.Column;
@@ -24,7 +25,18 @@ public class ProductDto {
 
     private Shop shop;
 
+    public ProductDto(Product product) {
+        this.id = product.getId();
+        this.productName = product.getProductName();
+        this.price = product.getPrice();
+        this.description = product.getDescription();
+        this.image = product.getImage();
+        this.productCategory = product.getProductCategory();
+        this.orderDetail = product.getOrderDetail();
+        this.shop = product.getShop();
+    }
     public ProductDto() {
+
     }
 
     public Long getId() {
