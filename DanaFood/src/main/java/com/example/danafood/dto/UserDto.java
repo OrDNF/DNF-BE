@@ -13,6 +13,12 @@ public class UserDto {
     public UserDto() {
     }
 
+    public UserDto(String password, String userName, Role role) {
+        this.password = password;
+        this.userName = userName;
+        this.role = role;
+    }
+
     public Long getId() {
         return id;
     }
