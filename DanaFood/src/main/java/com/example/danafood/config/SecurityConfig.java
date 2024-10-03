@@ -26,7 +26,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
         jsr250Enabled = true,
         prePostEnabled = true
 )
-public class SecurityConfig{
+public class SecurityConfig {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
 
@@ -37,14 +37,10 @@ public class SecurityConfig{
     private JwtEntryPoint jwtEntryPoint;
 
     @Bean
-    public JwtTokenFilter jwtTokenFilter(){
+    public JwtTokenFilter jwtTokenFilter() {
         return new JwtTokenFilter();
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -54,29 +50,25 @@ public class SecurityConfig{
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
-        return authConfig.getAuthenticationManager();
-    }
-
-
-    @Bean
-    public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .authorizeRequests().requestMatchers("api/register").permitAll()
-                .requestMatchers("api/login").permitAll()
+                .authorizeRequests().requestMatchers("api/register", "api/login").permitAll()
                 .anyRequest().authenticated();
-//                .requestMatchers( "api/register").permitAll()
-//                .requestMatchers( "api/login").permitAll()
-//                .requestMatchers("api/product/create/**").hasAuthority("SHOP")
-//                        .requestMatchers("api/product").hasAuthority("SHOP")
-//                        .anyRequest().authenticated()
-        ;
         http.authenticationProvider(authenticationProvider());
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
+        return authConfig.getAuthenticationManager();
+    }
 
 }

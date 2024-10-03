@@ -1,5 +1,6 @@
 package com.example.danafood.security.jwt;
 
+import com.example.danafood.security.userpricipal.UserPrinciple;
 import io.jsonwebtoken.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
-import java.nio.file.attribute.UserPrincipal;
 import java.security.SignatureException;
 import java.util.Date;
 
@@ -21,7 +21,7 @@ public class JwtTokenProvider {
     @Value("${app.jwtExpirationInMs}")
     private int jwtExpirationInMs;
     private static final String AUTHORIZATION_HEADER = "Authorization";
-    private static final String TOKEN_PREFIX = "Bearer ";
+    private static final String TOKEN_PREFIX = "Bearer";
 
     public String getJwtFromRequest(HttpServletRequest request) {
         String bearerToken = request.getHeader(AUTHORIZATION_HEADER);
@@ -31,11 +31,11 @@ public class JwtTokenProvider {
         return null;
     }
     public String generateToken(Authentication authentication) {
-        UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
+        UserPrinciple userPrinciple = (UserPrinciple) authentication.getPrincipal();
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + jwtExpirationInMs);
         return Jwts.builder()
-                .setSubject(userPrincipal.getName())
+                .setSubject(userPrinciple.getUsername())
                 .setIssuedAt(new Date())
                 .setExpiration(expiryDate)
                 .signWith(SignatureAlgorithm.HS512, jwtSecret)

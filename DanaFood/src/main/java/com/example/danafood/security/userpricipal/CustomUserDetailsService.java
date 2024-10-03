@@ -1,6 +1,7 @@
 package com.example.danafood.security.userpricipal;
 
 import com.example.danafood.dto.UserDto;
+import com.example.danafood.model.User;
 import com.example.danafood.repository.IUserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,10 +15,11 @@ public class CustomUserDetailsService implements UserDetailsService {
     private IUserRepo iUserRepo;
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        UserDto user = iUserRepo.findByUserName(userName);
-        if (user == null) {
+        User user = iUserRepo.findByUserName(userName);
+        UserDto userDto = new UserDto(user.getId(), user.getUserName(), user.getPassword(), user.getRole());
+        if (userDto == null) {
             throw new UsernameNotFoundException("Not found account with username " + userName);
         }
-        return UserPrincipal.create(user);
+        return UserPrinciple.create(userDto);
     }
 }

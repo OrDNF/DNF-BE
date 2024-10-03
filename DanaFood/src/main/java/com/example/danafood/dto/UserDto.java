@@ -13,9 +13,16 @@ public class UserDto {
     public UserDto() {
     }
 
-    public UserDto(String password, String userName, Role role) {
+    public UserDto(String userName, String password,  Role role) {
         this.password = password;
         this.userName = userName;
+        this.role = role;
+    }
+
+    public UserDto(Long id, String userName, String password, Role role) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
         this.role = role;
     }
 

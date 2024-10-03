@@ -13,11 +13,7 @@ public class UserService implements IUserService {
     private User user;
 
     @Override
-    public void signUp(UserDto userDto) {
-        user = new User();
-        user.setUserName(userDto.getUserName());
-        user.setPassword(userDto.getPassword());
-        user.setRole(userDto.getRole());
+    public void signUp(User user) {
         iUserRepo.save(user);
     }
 }
