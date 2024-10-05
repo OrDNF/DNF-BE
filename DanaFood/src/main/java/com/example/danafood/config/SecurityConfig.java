@@ -54,7 +54,7 @@ public class SecurityConfig {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .authorizeRequests().requestMatchers("api/register", "api/login").permitAll()
+                .authorizeRequests().requestMatchers("api/user/register", "api/login").permitAll()
                 .anyRequest().authenticated();
         http.authenticationProvider(authenticationProvider());
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);

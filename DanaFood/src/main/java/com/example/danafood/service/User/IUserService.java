@@ -5,4 +5,6 @@ import com.example.danafood.model.User;
 
 public interface IUserService {
     void signUp(User user);
+
+    User findByName(String name);
 }

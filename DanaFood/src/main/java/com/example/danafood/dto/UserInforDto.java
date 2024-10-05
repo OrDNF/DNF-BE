@@ -29,6 +29,15 @@ public class UserInforDto {
         this.user = user;
     }
 
+    public UserInforDto(String firstName, String lastName, String phoneNumber, String email, String address, User user) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.address = address;
+        this.user = user;
+    }
+
     public UserInforDto() {
     }
 
