@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb518748-1101-4358-938d-acd3762fa7f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/model/dto/ProductDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/571efb86b4132c4f9da2120dbb2ad502d35b7c35" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5fbc7e2b147d0e17b9f99fd768ae8d05da66c34c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/898723d3e6465069085e17f8bd78c4a1dc1b30fa" beforeDir="false" />
@@ -22,9 +23,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/0/f07866736216be0ee2aba49e392191aeae700a35" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/IProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/IProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/IProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/ProductCategoryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -63,27 +74,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build DanaFood.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DanaFoodApplication.executor": "Run",
-    "git-widget-placeholder": "TThatDien",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/DNF-BE/DanaFood/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build DanaFood.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DanaFoodApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;TThatDien&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/GitHub/DNF-BE/DanaFood/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\GitHub\DNF-BE\DanaFood\src\main" />
@@ -114,7 +125,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727366189428</updated>
       <workItem from="1727366194240" duration="3897000" />
-      <workItem from="1727437091126" duration="588000" />
+      <workItem from="1727437091126" duration="2663000" />
+      <workItem from="1728108986987" duration="3824000" />
     </task>
     <servers />
   </component>
