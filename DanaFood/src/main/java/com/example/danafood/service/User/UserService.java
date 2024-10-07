@@ -21,5 +21,10 @@ public class UserService implements IUserService {
         return iUserRepo.findByUserName(name);
     }
 
+    @Override
+    public Boolean existsByUserName(String userName) {
+        return iUserRepo.existsByUserName(userName);
+    }
+
 
 }

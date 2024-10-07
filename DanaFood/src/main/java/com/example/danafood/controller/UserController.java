@@ -11,6 +11,7 @@ import com.example.danafood.security.jwt.JwtTokenProvider;
 import com.example.danafood.security.userpricipal.UserPrinciple;
 import com.example.danafood.service.User.IUserService;
 import com.example.danafood.service.UserInfor.IUserInforService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +40,10 @@ public class UserController {
     private AuthenticationManager authenticationManager;
 
     @PostMapping("/user/register")
-    public ResponseEntity<?> register(@RequestBody UserRegisterForm user) {
+    public ResponseEntity<?> register(@Valid @RequestBody UserRegisterForm user) {
+        if(userService.existsByUserName(user.getUserName()) || userInforService.existsByEmail(user.getEmail())){
+            return new ResponseEntity<>(new ResponseMessage("Email or UserName already exists"), HttpStatus.BAD_REQUEST);
+        }
         User newUser = new User(user.getUserName(), passwordEncoder.encode(user.getPassword()), user.getRole());
         userService.signUp(newUser);
         User findUser = userService.findByName(newUser.getUserName());

@@ -15,4 +15,9 @@ public class UserInforService implements IUserInforService {
         UserInfor userInfor = new UserInfor(userInforDto.getFirstName(), userInforDto.getLastName(), userInforDto.getPhoneNumber(), userInforDto.getEmail(), userInforDto.getAddress(),userInforDto.getUser());
         iUserInforRepo.save(userInfor);
     }
+
+    @Override
+    public Boolean existsByEmail(String email) {
+        return iUserInforRepo.existsByEmail(email);
+    }
 }

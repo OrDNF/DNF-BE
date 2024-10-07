@@ -7,4 +7,6 @@ public interface IUserService {
     void signUp(User user);
 
     User findByName(String name);
+
+    Boolean existsByUserName(String userName);
 }

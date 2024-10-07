@@ -4,4 +4,5 @@ import com.example.danafood.dto.UserInforDto;
 
 public interface IUserInforService {
     void save (UserInforDto userInfor);
+    Boolean existsByEmail(String email);
 }

@@ -12,13 +12,13 @@ public class UserRegisterForm {
     @NotNull
     @NotBlank(message = "Tên đăng nhập không được để trống")
     @Size(min = 6, max = 20,  message = "Tên đăng nhập từ 6-20 ký tự")
-    @Pattern(regexp = "^[a-zA-Z0-9]+$", message = "Tên đăng nhập chưa ký tự chữ, in hoa và chữ số, không được chứa ký tự đặc biệt!")
+    @Pattern(regexp = "^[a-zA-Z0-9]+$", message = "Tên đăng nhập chứa ký tự chữ, in hoa và chữ số, không được chứa ký tự đặc biệt!")
     private String userName;
 
     @NotNull
     @NotBlank(message = "Mật khẩu không được để trống")
     @Size(min = 10, max = 20, message = "Tên đăng nhập từ 10-20 ký tự")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[^\\s]+$\n", message = "Mật khẩu phải chứa ít nhất chữ thường, chữ hoa, chữ số v ký tự đặc biệt không chưa khoảng trắng")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[\\S]+$", message = "Mật khẩu phải chứa ít nhất chữ thường, chữ hoa, chữ số và ký tự đặc biệt không chưa khoảng trắng")
     private String password;
 
     @NotNull

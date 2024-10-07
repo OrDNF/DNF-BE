@@ -8,4 +8,5 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 @Transactional
 public interface IUserInforRepo extends JpaRepository<UserInfor, Long> {
+    Boolean existsByEmail(String email);
 }
