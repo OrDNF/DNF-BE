@@ -11,6 +11,7 @@ import com.example.danafood.security.jwt.JwtTokenProvider;
 import com.example.danafood.security.userpricipal.UserPrinciple;
 import com.example.danafood.service.User.IUserService;
 import com.example.danafood.service.UserInfor.IUserInforService;
+import com.example.danafood.service.mailSender.SendEmail;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,6 +23,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
 import java.time.LocalDateTime;
 
 @RestController
@@ -38,9 +40,11 @@ public class UserController {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private AuthenticationManager authenticationManager;
+    @Autowired
+    private SendEmail sendEmail;
 
     @PostMapping("/user/register")
-    public ResponseEntity<?> register(@Valid @RequestBody UserRegisterForm user) {
+    public ResponseEntity<?> register(@Valid @RequestBody UserRegisterForm user) throws MessagingException, jakarta.mail.MessagingException {
         if(userService.existsByUserName(user.getUserName()) || userInforService.existsByEmail(user.getEmail())){
             return new ResponseEntity<>(new ResponseMessage("Email or UserName already exists"), HttpStatus.BAD_REQUEST);
         }
@@ -49,6 +53,7 @@ public class UserController {
         User findUser = userService.findByName(newUser.getUserName());
         UserInforDto userInforDto = new UserInforDto(user.getFirstName(), user.getLastName(), user.getPhone(), user.getEmail(), user.getAddress(), findUser);
         userInforService.save(userInforDto);
+        sendEmail.sendEmailRegister(userInforDto.getEmail());
         return new ResponseEntity<>(new ResponseMessage("Create success"), HttpStatus.OK);
     }
 

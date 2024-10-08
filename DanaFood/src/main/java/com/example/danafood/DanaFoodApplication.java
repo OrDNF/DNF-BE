@@ -33,7 +33,7 @@ public class DanaFoodApplication {
         mailSender.setPort(port);
 
         mailSender.setUsername(username);
-        mailSender.setPassword(password);
+        mailSender.setPassword("hcdnunzuvxzfcxmv");
 
 
         Properties props = mailSender.getJavaMailProperties();
