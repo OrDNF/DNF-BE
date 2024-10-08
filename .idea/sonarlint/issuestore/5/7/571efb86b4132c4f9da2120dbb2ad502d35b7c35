@@ -1,10 +1,14 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡°ÿ‚8ò¨Ü¥2J$248b4e32-735a-4c4d-947f-de8af3a0e2f0
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ¨Ü¥2J$a11c5091-224f-49ba-b7b7-785c4ed8af73
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ¨Ü¥2J$1103e7eb-ecee-4f36-8978-a8f91a9d214f
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ¨Ü¥2J$f3a11d8d-5fe9-480e-8fba-cd5d035e2f09
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ö¨Ü¥2J$eee9110c-1570-4170-b125-24a79840de6a
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡°ÿ‚
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+w
+java:S1128	"aRemove this unused import 'com.example.danafood.service.ProductCategory.IProductCategoryService'.(ÆÉ½ì
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
