@@ -1,6 +1,5 @@
 package com.example.danafood.controller;
 
-import com.example.danafood.dto.UserDto;
 import com.example.danafood.dto.UserInforDto;
 import com.example.danafood.dto.request.LoginForm;
 import com.example.danafood.dto.request.UserRegisterForm;
@@ -12,6 +11,7 @@ import com.example.danafood.security.userpricipal.UserPrinciple;
 import com.example.danafood.service.User.IUserService;
 import com.example.danafood.service.UserInfor.IUserInforService;
 import com.example.danafood.service.mailSender.SendEmail;
+import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,7 +23,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.mail.MessagingException;
 import java.time.LocalDateTime;
 
 @RestController
@@ -44,7 +43,7 @@ public class UserController {
     private SendEmail sendEmail;
 
     @PostMapping("/user/register")
-    public ResponseEntity<?> register(@Valid @RequestBody UserRegisterForm user) throws MessagingException, jakarta.mail.MessagingException {
+    public ResponseEntity<?> register(@Valid @RequestBody UserRegisterForm user) throws MessagingException {
         if(userService.existsByUserName(user.getUserName()) || userInforService.existsByEmail(user.getEmail())){
             return new ResponseEntity<>(new ResponseMessage("Email or UserName already exists"), HttpStatus.BAD_REQUEST);
         }

@@ -19,7 +19,7 @@ public class UserRegisterForm {
     @NotBlank(message = "Mật khẩu không được để trống")
     @Size(min = 10, max = 20, message = "Tên đăng nhập từ 10-20 ký tự")
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])[\\S]+$", message = "Mật khẩu phải chứa ít nhất chữ thường, chữ hoa, chữ số và ký tự đặc biệt không chưa khoảng trắng")
-    private String password;
+    private String password; 
 
     @NotNull
     @NotBlank(message = "Email không được để trống")
