@@ -1,0 +1,10 @@
+
+V	java:S107:"AConstructor has 8 parameters, which is greater than 7 authorized.(óëè«
+b
+java:S5998&"LRefactor this repetition that can lead to a stack overflow for large inputs.(€çˆó
+K
+java:S6397&"5Replace this character class by the character itself.(€çˆó
+b
+java:S5998-"LRefactor this repetition that can lead to a stack overflow for large inputs.(ŞÊÁÓ
+K
+java:S6397-"5Replace this character class by the character itself.(ŞÊÁÓ

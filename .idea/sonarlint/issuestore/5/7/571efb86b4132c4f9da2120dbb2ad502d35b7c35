@@ -1,14 +1,12 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡°ÿ‚
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-w
-java:S1128	"aRemove this unused import 'com.example.danafood.service.ProductCategory.IProductCategoryService'.(ÆÉ½ì
-F
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡°ÿ‚8µ´Ã¬§2J$9841b54d-5d82-4463-8ec5-9d2c788cce56
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¸´Ã¬§2J$8c5a7d3e-5dfa-4eca-a4c1-73c8ebac9a47
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¸´Ã¬§2J$f8e3d5c4-4fbe-4b0d-958e-3841e2719ca4
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¸´Ã¬§2J$659ec1f4-e13c-4d17-b947-749de1159abb
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¸´Ã¬§2J$8f1cd5a0-2a4b-442c-a955-f02485bf2631
+„
+java:S1612#"<Replace this lambda with method reference 'ProductDto::new'.(ýúØ„øÿÿÿÿ8¼´Ã¬§2J$9cf39a15-486d-47e3-b1cc-ecfdd2a73c17

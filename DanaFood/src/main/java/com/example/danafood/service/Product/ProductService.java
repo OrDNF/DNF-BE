@@ -1,7 +1,7 @@
 package com.example.danafood.service.Product;
 
+import com.example.danafood.dto.ProductDto;
 import com.example.danafood.model.Product;
-import com.example.danafood.model.dto.ProductDTO;
 import com.example.danafood.repository.IOrderDetailRepo;
 import com.example.danafood.repository.IProductCategoryRepo;
 import com.example.danafood.repository.IProductRepo;
@@ -30,8 +30,9 @@ public class ProductService implements IProductService{
 
 
     @Override
-    public Page<Product> findALlProduct(Pageable pageable) {
-        return iProductRepo.findAll(pageable);
+    public Page<ProductDto> findAllProduct(Pageable pageable) {
+        Page<Product> products = iProductRepo.findAll(pageable);
+        return products.map(product -> new ProductDto(product));
     }
 
     @Override
@@ -40,12 +41,12 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public Product addNewProduct(ProductDTO product) {
+    public Product addNewProduct(ProductDto product) {
         return iProductRepo.save(dtoToObject(product));
     }
 
     @Override
-    public Product editProduct(Long id,@Valid ProductDTO product) {
+    public Product editProduct(Long id,@Valid ProductDto product) {
         if (iProductRepo.existsById(id)) {
             return iProductRepo.save(dtoToObject(product));
         } else {
@@ -53,33 +54,8 @@ public class ProductService implements IProductService{
         }
     }
 
-    public Product dtoToObject(ProductDTO productDTO){
-        Product product1 = new Product();
-        product1.setProductName(productDTO.getProductName());
-        product1.setDescription(productDTO.getDescription());
-        product1.setImage(productDTO.getImage());
-        product1.setPrice(productDTO.getPrice());
-        product1.setProductCategory(
-                iProductCategoryRepo.findById(productDTO.getProductCategory())
-                        .orElseThrow(() -> new NoSuchElementException("Product category not found with id: " + productDTO.getProductCategory()))
-        );
-        product1.setShop(
-                iShopRepo.findById(productDTO.getShop())
-                        .orElseThrow(() -> new NoSuchElementException("Shop not found with id: " + productDTO.getShop()))
-        );
-
-        if (productDTO.getOrderDetail() != null){
-            product1.setOrderDetail(
-                    iOrderDetailRepo.findById(productDTO.getOrderDetail())
-                            .orElseThrow(() -> new NoSuchElementException("Order detail not found with id: " + productDTO.getOrderDetail()))
-            );
-        }
-        return product1;
+    public Product dtoToObject(ProductDto productDTO){
+        return new Product(productDTO.getProductName(),productDTO.getPrice(),productDTO.getDescription(), productDTO.getImage(), productDTO.getProductCategory(),productDTO.getOrderDetail(),productDTO.getShop());
     }
 
-    @Override
-    public Page<ProductDto> findAllProducts(Pageable pageable) {
-        Page<Product> products = iProductRepo.findAll(pageable);
-        return products.map(product -> new ProductDto(product));
-    }
 }

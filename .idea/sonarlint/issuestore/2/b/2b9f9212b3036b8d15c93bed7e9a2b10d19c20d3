@@ -1,0 +1,15 @@
+
+É
+java:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷´½Âÿÿÿÿÿ8½Ó«§2J$64be0fbb-71d8-4612-94be-70f1e020e065
+†
+java:S1128"CRemove this unused import 'com.example.danafood.model.OrderDetail'.(îÑçœ8´­Ó«§2J$0256b7ff-94e1-4172-b081-843b73574a2c
+
+java:S1128"GRemove this unused import 'com.example.danafood.model.ProductCategory'.(Îııïıÿÿÿÿ8¶­Ó«§2J$9b85cd34-b671-4c56-afb1-2201a2530b90
+„
+java:S1128"<Remove this unused import 'com.example.danafood.model.Shop'.(Ç‹ºİşÿÿÿÿ8¶­Ó«§2J$5291ff3b-9ccb-4e79-9390-cf2b9de1d9f3
+y
+java:S1128"7Remove this unused import 'jakarta.persistence.Column'.(Ó‰ÙE8¶­Ó«§2J$9766c9d1-ebbe-4030-8db5-cce0e951947e
+~
+java:S1128";Remove this unused import 'jakarta.persistence.JoinColumn'.(İçÆ•8¶­Ó«§2J$1ce421d6-8153-4e4c-a0bd-4c9615b4dc60
+‚
+java:S1128	":Remove this unused import 'jakarta.persistence.ManyToOne'.(áîÖãùÿÿÿÿ8¶­Ó«§2J$de8bccce-1dc1-48d3-be04-0b2b6607e0ee

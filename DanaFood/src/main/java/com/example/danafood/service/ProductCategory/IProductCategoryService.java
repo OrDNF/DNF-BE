@@ -2,7 +2,6 @@ package com.example.danafood.service.ProductCategory;
 
 import com.example.danafood.model.Product;
 import com.example.danafood.model.ProductCategory;
-import com.example.danafood.model.dto.ProductDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

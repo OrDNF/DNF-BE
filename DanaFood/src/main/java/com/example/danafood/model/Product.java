@@ -19,6 +19,27 @@ public class Product {
     @Column(columnDefinition = "Longtext")
     private String image;
 
+    public Product(String productName, Double price, String description, String image, ProductCategory productCategory, OrderDetail orderDetail, Shop shop) {
+        this.productName = productName;
+        this.price = price;
+        this.description = description;
+        this.image = image;
+        this.productCategory = productCategory;
+        this.orderDetail = orderDetail;
+        this.shop = shop;
+    }
+
+    public Product(Long id, String productName, Double price, String description, String image, ProductCategory productCategory, OrderDetail orderDetail, Shop shop) {
+        this.id = id;
+        this.productName = productName;
+        this.price = price;
+        this.description = description;
+        this.image = image;
+        this.productCategory = productCategory;
+        this.orderDetail = orderDetail;
+        this.shop = shop;
+    }
+
     @ManyToOne
     @JoinColumn(name = "category_id")
     private ProductCategory productCategory;

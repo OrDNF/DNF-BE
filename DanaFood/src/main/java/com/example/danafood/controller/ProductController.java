@@ -1,7 +1,7 @@
 package com.example.danafood.controller;
 
+import com.example.danafood.dto.ProductDto;
 import com.example.danafood.model.Product;
-import com.example.danafood.model.dto.ProductDTO;
 import com.example.danafood.service.Product.IProductService;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
@@ -20,14 +20,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/product")
 @CrossOrigin(origins = "http://localhost:4200/", allowedHeaders = "*")
 public class ProductController {
     @Autowired
     private IProductService productService;
 
     @GetMapping("/")
-    public Page<Product> getAllProducts(
+    public Page<ProductDto> getAllProducts(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size,
             @RequestParam(defaultValue = "id,asc") String[] sort) {
@@ -35,27 +35,21 @@ public class ProductController {
         Sort.Direction direction = Sort.Direction.fromString(sort[1]);
         Pageable pageable = PageRequest.of(page, size, Sort.by(direction, sort[0]));
 
-        return productService.findALlProduct(pageable);
+        return productService.findAllProduct(pageable);
     }
-    //    public ResponseEntity<ApiResponseDTO<Void>> createNewLanding(@RequestBody @Valid LandingRequestDTO landingRequestDTO) {
-//        iLandingService.createLanding(landingRequestDTO);
-//
-//        ApiResponseDTO apiResponseDTO = ApiResponseDTO.builder().code(1000).message("Thêm mặt bằng thành công").build();
-//
-//        return new ResponseEntity<>(apiResponseDTO,HttpStatus.OK);
-//    }
+
     @PostMapping("/addNewProduct")
-    public ResponseEntity<Product> addNewProduct(@RequestBody @Valid ProductDTO product) {
+    public ResponseEntity<Product> addNewProduct(@RequestBody @Valid ProductDto product) {
         Product savedProduct = productService.addNewProduct(product);
         return new ResponseEntity<>(savedProduct, HttpStatus.CREATED);
     }
-    @DeleteMapping("/deleteProduct/{id}")
-    public ResponseEntity<String> deleteProduct(@PathVariable Long id){
+    @DeleteMapping("/deleteProduct")
+    public ResponseEntity<String> deleteProduct(@RequestParam Long id){
         productService.deleteProductById(id);
         return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
     }
-        @PutMapping("/updateProduct/{id}")
-    public ResponseEntity<String> updateProduct(@PathVariable Long id, @RequestBody  ProductDTO product) {
+        @PutMapping("/updateProduct")
+    public ResponseEntity<String> updateProduct(@RequestParam Long id, @RequestBody  ProductDto product) {
         try {
             productService.editProduct(id, product);
             return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);

@@ -5,9 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb518748-1101-4358-938d-acd3762fa7f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09c3c59ac9b497b441ff6fe318e074ba2094ec9d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bce4190f44e9c631051950ece3048d27ee772a3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4158aba5be3a85047a112fc36f53ca81572a42e9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6659dcc89160cab8358b5339ac71385062a38541" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/714e687e32be468eea1b287f18ac30febc3b9892" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80900fe03904cb9ef7d5e31eb51706fc5bf31220" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/920cb8728700a6b8aa5e053886b7729458d7e8f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a64835e283c1bcea4253fe9004572451e6314e53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc6e4e0ebe63fe3174dde3e7791a5ae4098b793e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dca24f3bdd921dd517bc83552f3d8d04073ea9e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e087d7ccd5f049a6f549029266ea53f3e79399d8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/9/09c3c59ac9b497b441ff6fe318e074ba2094ec9d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1bce4190f44e9c631051950ece3048d27ee772a3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/4158aba5be3a85047a112fc36f53ca81572a42e9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/6659dcc89160cab8358b5339ac71385062a38541" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/1/714e687e32be468eea1b287f18ac30febc3b9892" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/0/80900fe03904cb9ef7d5e31eb51706fc5bf31220" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/920cb8728700a6b8aa5e053886b7729458d7e8f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/6/a64835e283c1bcea4253fe9004572451e6314e53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/c/bc6e4e0ebe63fe3174dde3e7791a5ae4098b793e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/c/dca24f3bdd921dd517bc83552f3d8d04073ea9e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/0/e087d7ccd5f049a6f549029266ea53f3e79399d8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/011c471cf88dfead36c1c2e4f593260c96410871" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/011c471cf88dfead36c1c2e4f593260c96410871" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/571efb86b4132c4f9da2120dbb2ad502d35b7c35" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/571efb86b4132c4f9da2120dbb2ad502d35b7c35" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5fbc7e2b147d0e17b9f99fd768ae8d05da66c34c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5fbc7e2b147d0e17b9f99fd768ae8d05da66c34c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f4e8b19a6a8c3598b2c3db12b221e69a09a9cc0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f4e8b19a6a8c3598b2c3db12b221e69a09a9cc0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/898723d3e6465069085e17f8bd78c4a1dc1b30fa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/898723d3e6465069085e17f8bd78c4a1dc1b30fa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbab60433643103ee5a02f93852f5d0dee60fdaf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bbab60433643103ee5a02f93852f5d0dee60fdaf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eea1832fd29faf75edd37206d1cebce0f51ad364" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eea1832fd29faf75edd37206d1cebce0f51ad364" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/DanaFoodApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/DanaFoodApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/dto/response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/dto/response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/model/dto/ProductDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/repository/IProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/repository/IProductRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/userpricipal/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/userpricipal/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/userpricipal/UserPrinciple.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/security/userpricipal/UserPrinciple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/Product/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/IProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/IProductCategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/ProductCategory/ProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/mailSender/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/DanaFood/src/main/java/com/example/danafood/service/mailSender/SendEmail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,27 +102,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build DanaFood.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DanaFoodApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TThatDien&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/GitHub/DNF-BE/DanaFood/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build DanaFood.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DanaFoodApplication.executor": "Run",
+    "git-widget-placeholder": "TThatDien",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/Documents/GitHub/DNF-BE/DanaFood/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\GitHub\DNF-BE\DanaFood\src\main" />
@@ -108,6 +158,7 @@
       <workItem from="1728108986987" duration="5525000" />
       <workItem from="1728137137105" duration="632000" />
       <workItem from="1728398246591" duration="151000" />
+      <workItem from="1728546511197" duration="3706000" />
     </task>
     <servers />
   </component>
