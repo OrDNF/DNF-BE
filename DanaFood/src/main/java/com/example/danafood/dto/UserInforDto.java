@@ -1,43 +1,44 @@
-package com.example.danafood.model;
+package com.example.danafood.dto;
 
+import com.example.danafood.model.User;
 import jakarta.persistence.*;
-import org.hibernate.annotations.ColumnDefault;
 
-@Entity
-public class UserInfor {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserInforDto {
+
     private Long id;
 
-    @Column(columnDefinition = "varchar(45)")
     private String firstName;
 
-    @Column(columnDefinition = "varchar(45)")
     private String lastName;
 
-    @Column(columnDefinition = "varchar(10)")
     private String phoneNumber;
 
-    @Column(columnDefinition = "varchar(45)")
     private String email;
 
-    @Column(columnDefinition = "varchar(150)")
     private String address;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
     private User user;
 
-    public UserInfor() {
-    }
-
-    public UserInfor(String firstName, String lastName, String phoneNumber, String email, String address, User user) {
+    public UserInforDto(Long id, String firstName, String lastName, String phoneNumber, String email, String address, User user) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.email = email;
         this.address = address;
         this.user = user;
+    }
+
+    public UserInforDto(String firstName, String lastName, String phoneNumber, String email, String address, User user) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.address = address;
+        this.user = user;
+    }
+
+    public UserInforDto() {
     }
 
     public Long getId() {

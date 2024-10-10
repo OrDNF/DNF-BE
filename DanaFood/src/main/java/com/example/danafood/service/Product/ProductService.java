@@ -76,4 +76,10 @@ public class ProductService implements IProductService{
         }
         return product1;
     }
+
+    @Override
+    public Page<ProductDto> findAllProducts(Pageable pageable) {
+        Page<Product> products = iProductRepo.findAll(pageable);
+        return products.map(product -> new ProductDto(product));
+    }
 }

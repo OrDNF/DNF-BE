@@ -1,40 +1,29 @@
-package com.example.danafood.model;
+package com.example.danafood.dto;
 
-import jakarta.persistence.*;
+import com.example.danafood.model.Role;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
-@Entity
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+public class UserDto {
     private Long id;
-
     private String userName;
     private String password;
-    @ManyToOne
-    @JoinColumn(name = "role_id")
     private Role role;
 
-    public User(String userName, String password, Role role) {
-        this.role = role;
+    public UserDto() {
+    }
+
+    public UserDto(String userName, String password,  Role role) {
         this.password = password;
         this.userName = userName;
-    }
-
-    public User(String userName, String password) {
-        this.password = password;
-        this.userName = userName;
-    }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
         this.role = role;
     }
 
-    public User() {
+    public UserDto(Long id, String userName, String password, Role role) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.role = role;
     }
 
     public Long getId() {
@@ -59,5 +48,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 }

@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:4200/", allowedHeaders = "*")
 public class ProductController {
     @Autowired
