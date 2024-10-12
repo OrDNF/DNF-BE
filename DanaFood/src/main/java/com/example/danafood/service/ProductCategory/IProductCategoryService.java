@@ -5,12 +5,13 @@ import com.example.danafood.model.ProductCategory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface IProductCategoryService {
     Optional<ProductCategory> findById(Long id);
-    Page<ProductCategory> findALlCategory(Pageable pageable);
+    List<ProductCategory> findALlCategory();
     void deleteCategoryById(Long id);
-    Product addNewCategory(ProductCategory category);
-    Product editCategory(Long id,ProductCategory category);
+    ProductCategory addNewCategory(ProductCategory category);
+    ProductCategory editCategory(Long id,ProductCategory category);
 }
