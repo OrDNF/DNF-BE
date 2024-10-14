@@ -15,7 +15,7 @@ public class SendEmail {
     @Autowired
     private JavaMailSender javaMailSender;
 
-    public void sendEmailRegister(String email) throws MessagingException {
+    public void sendEmailRegister(String email, String firstName, String lastName) throws MessagingException {
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, "UTF-8");
 
@@ -32,7 +32,7 @@ public class SendEmail {
         // Tạo context và truyền dữ liệu (nếu cần)
         Context context = new Context();
         // context.setVariable("variableName", value); // Truyền biến vào template nếu cần
-
+        context.setVariable("name", firstName + " " + lastName);
         // Render template thành chuỗi HTML
         String htmlContent = templateEngine.process("EmailRegister", context); // Tên template không cần phần mở rộng
 

@@ -53,7 +53,7 @@ public class UserController {
         User findUser = userService.findByName(newUser.getUserName());
         UserInforDto userInforDto = new UserInforDto(user.getFirstName(), user.getLastName(), user.getPhone(), user.getEmail(), user.getAddress(), findUser);
         userInforService.save(userInforDto);
-        sendEmail.sendEmailRegister(userInforDto.getEmail());
+        sendEmail.sendEmailRegister(userInforDto.getEmail(), userInforDto.getFirstName(), user.getLastName());
         return new ResponseEntity<>(new ResponseMessage("Create success"), HttpStatus.OK);
     }
 

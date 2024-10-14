@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,15 +104,12 @@
             <h1>
                 Chào Mừng Tới DaNaFood
             </h1>
-            <p>
-                Chúc mừng! Bạn đã tạo Tài khoản DaNaFood.
-            </p>
             <div class="username-box">
                 <p>
-                    Tên người dùng:
+                    Kính gửi:
                 </p>
-                <p class="username">
-                    nguyenthongbao
+                <p class="username" th:text="${name}">
+
                 </p>
                 <p>
                     Xin chúc mừng! Tài khoản của bạn đã được đăng ký thành công trên DaNaFood.
@@ -124,7 +120,7 @@
                 <p>
                     Hãy đăng nhập vào tài khoản của bạn và bắt đầu đặt món ngay hôm nay!
                 </p>
-                <a class="button" href="#">
+                <a class="button" href="#" style="text-decoration: none; color: #f9f9f9">
                     Đăng Nhập ngay
                 </a>
             </div>
