@@ -1,0 +1,8 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õÃ¡¸úÿÿÿÿJ$bab39175-071a-4bb7-a294-9d95b3711d88
+a
+java:S1128"?Remove this unused import 'com.example.danafood.model.Product'.(¡ø†Áüÿÿÿÿ8è€ü§2
+‰
+java:S1128"ARemove this unused import 'org.springframework.data.domain.Page'.(˜âüÿÿÿÿ8æ–ü§2J$90783259-cbe5-4baa-a382-34b07395ab08
+
+java:S1128"ERemove this unused import 'org.springframework.data.domain.Pageable'.(‡ë‚Öıÿÿÿÿ8æ–ü§2J$5e1073f4-98a5-4e92-92de-5eaa7e0b4eed
