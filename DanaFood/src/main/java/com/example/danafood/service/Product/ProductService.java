@@ -50,7 +50,7 @@ public class ProductService implements IProductService{
         if (iProductRepo.existsById(id)) {
             return iProductRepo.save(dtoToObject(product));
         } else {
-            throw new EntityNotFoundException("Blog with id " + id + " not found");
+            throw new EntityNotFoundException("Product with id " + id + " not found");
         }
     }
 

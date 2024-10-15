@@ -1,6 +1,7 @@
 package com.example.danafood.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class ProductCategory {
@@ -8,6 +9,7 @@ public class ProductCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(columnDefinition = "varchar(50)")
+    @NotBlank(message = "Category not blank!")
     private String name;
 
     public ProductCategory() {

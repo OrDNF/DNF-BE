@@ -22,6 +22,13 @@ public class Shop {
     public Shop() {
     }
 
+    public Shop(String bankNumber, String bankName, String shop_name, UserInfor userInfor) {
+        this.bankNumber = bankNumber;
+        this.bankName = bankName;
+        this.shop_name = shop_name;
+        this.userInfor = userInfor;
+    }
+
     public Long getId() {
         return id;
     }

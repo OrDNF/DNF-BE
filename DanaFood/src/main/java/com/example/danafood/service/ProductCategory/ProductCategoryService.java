@@ -43,7 +43,7 @@ public class ProductCategoryService implements IProductCategoryService {
         if (iProductCategoryRepo.existsById(id)) {
             return iProductCategoryRepo.save(category);
         } else {
-            throw new EntityNotFoundException("Blog with id " + id + " not found");
+            throw new EntityNotFoundException("Category with id " + id + " not found");
         }
     }
 
